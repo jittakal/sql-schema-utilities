@@ -15,6 +15,10 @@ The SQL Schema Utilities project focuses on exploring SQL schema information and
 
 2. **SQL Schema Export as HTML:** This utility exports schema information in HTML format, making it easy to search and navigate table columns and related details.
 
+## Note
+
+>Applicable exclusively within a local development environment.
+
 ## License
 
 This project is licensed under the [Apache License 2.0](LICENSE). Feel free to use, modify, and distribute it in accordance with the license terms.
