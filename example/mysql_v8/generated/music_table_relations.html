@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Table Relations
+  </title>
+  <style>
+   body {
+                font-family: Arial, sans-serif;
+            }
+            .table {
+                border-collapse: collapse;
+                width: 80%;
+                margin: 20px auto;
+            }
+            .table, th, td {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+            .relation-title {
+                font-weight: bold;
+                margin-top: 20px;
+            }
+  </style>
+ </head>
+ <body>
+  <h1>
+   Table Relations
+  </h1>
+  <table>
+   <th>
+    Table Name
+   </th>
+   <th>
+    Relational Column
+   </th>
+   <th>
+    Relational Tables
+   </th>
+   <tr>
+    <td>
+     Album
+    </td>
+    <td>
+     albumid
+    </td>
+    <td>
+     <ul>
+      <li>
+       Track
+      </li>
+     </ul>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     Artist
+    </td>
+    <td>
+     artistid
+    </td>
+    <td>
+     <ul>
+      <li>
+       Album
+      </li>
+     </ul>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     Customer
+    </td>
+    <td>
+     customerid
+    </td>
+    <td>
+     <ul>
+      <li>
+       Invoice
+      </li>
+     </ul>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     Genre
+    </td>
+    <td>
+     genreid
+    </td>
+    <td>
+     <ul>
+      <li>
+       Track
+      </li>
+     </ul>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     Invoice
+    </td>
+    <td>
+     invoiceid
+    </td>
+    <td>
+     <ul>
+      <li>
+       InvoiceLine
+      </li>
+     </ul>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     MediaType
+    </td>
+    <td>
+     mediatypeid
+    </td>
+    <td>
+     <ul>
+      <li>
+       Track
+      </li>
+     </ul>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     Playlist
+    </td>
+    <td>
+     playlistid
+    </td>
+    <td>
+     <ul>
+      <li>
+       PlaylistTrack
+      </li>
+     </ul>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     PlaylistTrack
+    </td>
+    <td>
+     playlistid
+    </td>
+    <td>
+     <ul>
+      <li>
+       Playlist
+      </li>
+     </ul>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     PlaylistTrack
+    </td>
+    <td>
+     trackid
+    </td>
+    <td>
+     <ul>
+      <li>
+       InvoiceLine
+      </li>
+      <li>
+       Track
+      </li>
+     </ul>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     Track
+    </td>
+    <td>
+     trackid
+    </td>
+    <td>
+     <ul>
+      <li>
+       InvoiceLine
+      </li>
+      <li>
+       PlaylistTrack
+      </li>
+     </ul>
+    </td>
+   </tr>
+  </table>
+ </body>
+</html>
